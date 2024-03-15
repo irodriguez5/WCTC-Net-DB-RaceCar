@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RaceTrack.RaceTrack.Drivers;
+
 
 namespace RaceTrack.RaceTrack.Cars
 {
@@ -17,6 +19,10 @@ namespace RaceTrack.RaceTrack.Cars
         public override void StartEngine()
         {
             Console.WriteLine($"The {Name} engine starts");
+        }
+        public override void StopEngine()
+        {
+            Console.WriteLine($"{Name} engine stops");
         }
     }
 }
